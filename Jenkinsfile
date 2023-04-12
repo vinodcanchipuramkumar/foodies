@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'jenkinsslave2'
+        label 'slavenode1'
     }
     environment {
         FOODIES_GIT_PAT = credentials('pattoken')
@@ -20,7 +20,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git url:"https://${FOODIES_GIT_PAT}@github.com/techsriman/foodies.git"
+                git url:"https://${FOODIES_GIT_PAT}@github.com/vinodcanchipuramkumar/foodies.git"
             }
         }
         stage('test') {
