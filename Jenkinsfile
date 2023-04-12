@@ -9,7 +9,7 @@ pipeline {
         TOMCAT_HOME_DIR = '/u01/middleware/apache-tomcat-9.0.70'
     }
     tools {
-        maven '3.8.6'
+        maven '3.6.3'
     }
     options {
         buildDiscarder(logRotator(numToKeepStr: '3'))
