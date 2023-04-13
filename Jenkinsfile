@@ -4,7 +4,7 @@ pipeline {
     }
     environment {
         FOODIES_GIT_PAT = credentials('pattoken')
-        TOMCAT_DOWNLOAD_URL = 'https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz'
+        TOMCAT_DOWNLOAD_URL = 'https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.tar.gz'
         TOMCAT_BINARY_FILE = 'apache-tomcat-9.0.70.tar.gz'
         TOMCAT_HOME_DIR = '/u01/middleware/apache-tomcat-9.0.70'
     }
